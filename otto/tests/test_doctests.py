@@ -24,7 +24,7 @@ class DoctestCase(unittest.TestCase):
         import manuel.codeblock
         import manuel.doctest
         import manuel.capture
-        m = manuel.doctest.Manuel()
+        m = manuel.doctest.Manuel(optionflags=OPTIONFLAGS)
         m += manuel.codeblock.Manuel()
         m += manuel.capture.Manuel()
 
